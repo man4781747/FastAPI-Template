@@ -1,4 +1,5 @@
 from fastapi import Request, Query, Path, Form, HTTPException, status, Response
+from fastapi.responses import JSONResponse
 from typing import Union, Optional
 import json
 import datetime
@@ -50,7 +51,7 @@ init_db()
 async def Template_Manager_POST(
   response: Response,request: Request,):
   """
-    
+    https://github.com/tiangolo/fastapi/issues/246
   """
   try:
 
